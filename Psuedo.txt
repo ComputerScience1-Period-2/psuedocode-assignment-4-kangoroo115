@@ -8,12 +8,13 @@ Determine which player initiates start of round and which way players take turns
 Player that initiates round starts by placing card face up in the middle of table without looking at card information;
 WHILE (start player plays card)
   DO each player takes their turn playing their card until an identical number is revealed, regardless of color and group;
+  IF (card with identical number is placed together)
+    THEN the first player to slap the pile of cards with their hand will take every card adding it to their deck;
+    ELSE continue with game;
+    ENDIF;
+  IF (player obtains all 52 cards)
+    THEN player that obtains all cards wins the round;
+    ELSE continue with game;
+    ENDIF;
 ENDWHILE;
-IF (card with identical number is placed together)
-  THEN the first player to slap the pile of cards with their hand will take every card adding it to their deck;
-  ELSE continue with game;
-ENDIF;
-IF (player obtains all 52 cards)
-  THEN player that obtains all cards wins the round;
-  ELSE continue with game;
-ENDIF;
+
