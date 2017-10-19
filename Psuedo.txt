@@ -2,6 +2,20 @@ Get a standard deck of 52 cards and a table;
 Determine number of players;
 WHILE (cards are not spread evenly to each player)
   DO keep spreading cards to each player evenly;
+  
+  
+  
+  
+  You do not need an ENDWHILE. the whole point of a while loop is to have it end when a condition is met.
+  so: while(cardsnotshuffeld=true){
+  shuffle the cards;
+  if(cardsareshuffled)
+  {
+  cardsnotshuffled=false;
+  }
+  }
+  
+  
 ENDWHILE;
 Card information are kept hidden from other players;
 Determine which player initiates start of round and which way players take turns;
